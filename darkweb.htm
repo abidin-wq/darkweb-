@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TürkhackTeam-Darkweb</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d0d0d;
+            color: #00ff00;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 20px;
+            background: #121212;
+            border-bottom: 1px solid #00ff00;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+
+        .glitch {
+            position: relative;
+            display: inline-block;
+            color: #00ff00;
+            font-size: 3rem;
+            animation: glitch 1s infinite;
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.8;
+        }
+
+        .glitch::before {
+            color: #ff0000;
+            z-index: -1;
+            animation: glitch-anim-1 0.7s infinite;
+        }
+
+        .glitch::after {
+            color: #00ffff;
+            z-index: -2;
+            animation: glitch-anim-2 0.5s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: none; }
+            50% { transform: translate(-5px, 5px); }
+        }
+
+        @keyframes glitch-anim-1 {
+            0%, 100% { transform: translate(0); }
+            50% { transform: translate(-10px, -5px); }
+        }
+
+        @keyframes glitch-anim-2 {
+            0%, 100% { transform: translate(0); }
+            50% { transform: translate(10px, 5px); }
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #121212;
+            border-top: 1px solid #00ff00;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer p a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Ser2.exe</h1>
+        <nav>
+            <a href="darkweb.htm">Home</a>
+            <a href="Tools.htm">Tools</a>
+            <a href="resources.htm">Resources</a>
+            <a href="contact.htm">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2 class="glitch" data-text="𐱅𐰇𐰼𐰚">𐱅𐰇𐰼𐰚</h2>
+        <p>Biz Türk milleti temiz bir Müslümanız. Bid’at nedir asla bilmeyiz. Bundan dolayı Tanrı bizi aziz kılmıştır.</p>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2025 Ser2.exe Made with <a href="#">Passion</a> and Code.</p>
+    </footer>
+
+    <!-- Tools Page -->
+    <section id="tools" style="display:none;">
+        <h2>Tools</h2>
+        <p>Explore our collection of hacking tools designed for security and ethical purposes.</p>
+    </section>
+
+    <!-- Resources Page -->
+    <section id="resources" style="display:none;">
+        <h2>Resources</h2>
+        <p>Find tutorials, guides, and recommended reading to sharpen your skills.</p>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" style="display:none;">
+        <h2>Contact</h2>
+        <p>Get in touch with us for collaborations or inquiries.</p>
+    </section>
+</body>
+</html>
